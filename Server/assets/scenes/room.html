@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">         
+        <link rel="stylesheet" href="build/styles.css">
+    </head>
+  <body style="background-image: url('/css/paper.jpg');" class=" w-screen flex flex-col justify-center">
+
+    <form class="flex flex-col items-center justify-center">
+      <input type="text" class="border-4 border-gray-400 w-10/12 p-4 text-2xl m-4 rounded-md" placeholder="Jongens" readonly>
+      <input type="text" class="border-4 border-gray-400 w-10/12 p-4 text-2xl m-4 rounded-md" placeholder="Meisjes" readonly>
+      <input type="text" class="border-4 border-gray-400 w-10/12 p-4 text-2xl m-4 rounded-md" placeholder="Dieren" readonly>
+      <input type="text" class="border-4 border-gray-400 w-10/12 p-4 text-2xl m-4 rounded-md" placeholder="Landen" readonly>
+      <div class="flex flex-row w-10/12 m-0 p-0 items-center">
+        <input type="text" class="border-4 border-gray-400 py-4 pl-4  w-2 grow  text-2xl rounded-md" placeholder="Vruchten">
+        <input id="input" class="select-none touch-none grow-0 ring-4 ring-red-800 active:ring-red-900 active:bg-red-800 bg-red-700 text-4xl  p-2 px-4 mx-4 rounded-md text-white" type="submit" value="X">
+      </div>
+      <br>
+      <input class="select-none w-fit active:bg-green-800 ring-4 active:ring-green-900 ring-green-800  bg-green-700 w-fit p-4 rounded-md m-4 text-4xl text-white" type="submit" value="Toevoegen">
+    </form>
+<br>
+<br>
+    <form action="/" id="form" class="flex justify-center ">
+      <input id="input" class="select-none touch-none ring-4 ring-red-800 active:ring-red-900 active:bg-red-800 bg-red-700	text-4xl w-fit p-4 m-4 rounded-md text-white" type="submit" value="Go Back">
+    </form>
+
+    <form action="/" id="form" class="flex justify-center ">
+      <input id="" class="select-none touch-none ring-4 ring-sky-800 active:ring-sky-900 active:bg-sky-800 bg-sky-700	text-4xl w-fit p-4 m-4 rounded-md text-white" type="submit" value="Start Game">
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+<script>
+
+
+var socket = io();
+
+
+</script>
+  </body>
+</html>
